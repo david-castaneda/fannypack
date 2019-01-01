@@ -1,4 +1,4 @@
-#!/usr/bin/env node --harmony
+#!/usr/bin/env node
 
 import program from 'commander';
 import FannyPack from './lib/main';
