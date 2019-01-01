@@ -16,7 +16,7 @@ npm i -g fannypack-core
 
 ## Examples
 
-### **Custom Node**
+### **Custom Node project**
 Batteries included 🔋
 - [express](https://github.com/expressjs/express)
 - [mongoose](https://github.com/Automattic/mongoose)
@@ -29,7 +29,7 @@ yarn dev
 [Example project](https://github.com/david-castaneda/fannypack/tree/master/examples/custom-node)
 
 
-### **Basic Node**
+### **Basic Node project**
 Minimalistic node server 🗃
 - [express](https://github.com/expressjs/express)
 ```bash
@@ -38,6 +38,10 @@ cd your-app-name
 yarn dev
 ```
 [Example project](https://github.com/david-castaneda/fannypack/tree/master/examples/basic-node)
+
+### In the works 👨🏻‍💻
+- Typescript setup configurations (basic/custom)
+- Flow setup configurations (basic/custom)
 
 ## Inspirations
 - [create-react-app](https://github.com/facebook/create-react-app)
