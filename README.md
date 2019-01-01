@@ -1,4 +1,5 @@
 ![fannypack](https://user-images.githubusercontent.com/21694364/50570775-46f81700-0d66-11e9-8e50-c6efffb8bde8.jpg)
+[![npm version](https://badge.fury.io/js/fannypack-node.svg)](https://badge.fury.io/js/fannypack-node) 
 
 fannypack is a build configuration for Node.js. Inspired by Facebook's create-react-app & Jared Palmer's backpack-core.
 
@@ -7,7 +8,7 @@ fannypack is a build configuration for Node.js. Inspired by Facebook's create-re
 🚚 Install it:
 
 ```bash
-npm i -g f-pack
+npm i -g fannypack-node
 ```
 
 🏃🏻‍♂️ run it

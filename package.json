@@ -1,8 +1,9 @@
 {
-  "name": "fannypack",
+  "name": "fannypack-node",
   "description": "Build configurations for node without the hassle 🚀",
-  "version": "0.0.1",
-  "main": "index.js",
+  "version": "0.0.2",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
   "license": "MIT",
   "author": "David Castaneda <dcast188@fiu.edu>",
   "repository": "david-castaneda/fannypack",
@@ -20,7 +21,7 @@
     "dev": "npx tsc -w"
   },
   "bin": {
-    "f-pack": "./dist/main.js"
+    "fannypack": "./dist/main.js"
   },
   "dependencies": {
     "commander": "^2.19.0",
