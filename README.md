@@ -16,6 +16,8 @@ npm i -g fannypack-node
 Basic Node application:
 ```bash
 f-pack --basic-node your-app-name
+cd your-app-name
+npm run dev
 ```
 
 ## Some different Options
