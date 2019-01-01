@@ -1,0 +1,37 @@
+{
+  "name": "fannypack",
+  "description": "Build configurations for node without the hassle 🚀",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "David Castaneda <dcast188@fiu.edu>",
+  "repository": "david-castaneda/fannypack",
+  "keywords": [
+    "fannypack",
+    "f-pack",
+    "configurations",
+    "node",
+    "build",
+    "setups"
+  ],
+  "scripts": {
+    "build": "npx tsc",
+    "start": "yarn build && cd ./dist && node main.js",
+    "dev": "npx tsc -w"
+  },
+  "bin": {
+    "f-pack": "./dist/main.js"
+  },
+  "dependencies": {
+    "commander": "^2.19.0",
+    "inquirer": "^6.2.1",
+    "ncp": "^2.0.0",
+    "tslint-config-airbnb": "^5.11.1"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^0.0.43",
+    "@types/ncp": "^2.0.1",
+    "tslint": "^5.12.0",
+    "typescript": "^3.2.2"
+  }
+}
