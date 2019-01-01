@@ -7,23 +7,25 @@ function getNodeModulesDirectory(type: string): string {
   let user: string =
     process.env.HOME || process.env.HOMEPATH || process.env.USERPROFILE || '';
 
-  const localUserDirecory: string = `${user}/.npm-global/lib/node_modules/fannypack/examples/${type}`;
+  const localUserDirecory: string = `${user}/.npm-global/lib/node_modules/fannypack-core/examples/${type}`;
 
   let exampleDirecory: string;
 
   if (fs.existsSync(localUserDirecory)) {
     exampleDirecory = localUserDirecory;
     return exampleDirecory;
-  } else if (fs.existsSync(`/usr/local/lib/node/fannypack/examples/${type}`)) {
-    exampleDirecory = `/usr/local/lib/node/fannypack/examples/${type}`;
+  } else if (
+    fs.existsSync(`/usr/local/lib/node/fannypack-core/examples/${type}`)
+  ) {
+    exampleDirecory = `/usr/local/lib/node/fannypack-core/examples/${type}`;
     return exampleDirecory;
   } else if (
-    fs.existsSync(`/usr/local/lib/node_modules/fannypack/examples/${type}`)
+    fs.existsSync(`/usr/local/lib/node_modules/fannypack-core/examples/${type}`)
   ) {
-    exampleDirecory = `/usr/local/lib/node_modules/fannypack/examples/${type}`;
+    exampleDirecory = `/usr/local/lib/node_modules/fannypack-core/examples/${type}`;
     return exampleDirecory;
   } else {
-    throw 'Unable to find the fanny-pack module';
+    throw 'Unable to find fannypack-core';
   }
 }
 
