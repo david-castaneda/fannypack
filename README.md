@@ -1,17 +1,17 @@
 ![fannypack](https://user-images.githubusercontent.com/21694364/50570775-46f81700-0d66-11e9-8e50-c6efffb8bde8.jpg)
 [![npm version](https://badge.fury.io/js/fannypack-node.svg)](https://badge.fury.io/js/fannypack-node) 
 
-fannypack is a build configuration for Node.js. Inspired by Facebook's create-react-app & Jared Palmer's backpack-core.
+Fannypack is a build configuration for Node.js. Inspired by Facebook's create-react-app & Jared Palmer's backpack-core. Fannypack is made to bootstrap your javascript development by offering you minimalistic build configs for you to focus on developing and not the setup.
 
 ```bash
-f-pack --basic-node your-app-name
+fannypack --basic-node your-app-name
 cd your-app-name
 yarn dev
 ```
 ## Installation
 
 ```bash
-npm i -g fannypack-node
+npm i -g fannypack-core
 ```
 
 ## Examples
@@ -22,7 +22,7 @@ Batteries included 🔋
 - [mongoose](https://github.com/Automattic/mongoose)
 - [backpack](https://github.com/jaredpalmer/backpack)
 ```bash
-f-pack --custom-node your-app-name
+fannypack --custom-node your-app-name
 cd your-app-name
 yarn dev
 ```
@@ -33,7 +33,7 @@ yarn dev
 Minimalistic node server 🗃
 - [express](https://github.com/expressjs/express)
 ```bash
-f-pack --basic-node your-app-name
+fannypack --basic-node your-app-name
 cd your-app-name
 yarn dev
 ```
