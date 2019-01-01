@@ -1,32 +1,18 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import { spawn } from 'child_process';
+import { spawn, execSync } from 'child_process';
 import { ncp } from 'ncp';
 
 function getNodeModulesDirectory(type: string): string {
-  let user: string =
-    process.env.HOME || process.env.HOMEPATH || process.env.USERPROFILE || '';
+  let nodeModulesDirectory = execSync('npm root -g', { encoding: 'utf8' });
 
-  const localUserDirecory: string = `${user}/.npm-global/lib/node_modules/fannypack-core/examples/${type}`;
+  let sanitizedDirectory = nodeModulesDirectory.replace(/(\r\n|\n|\r)/gm, '');
 
-  let exampleDirecory: string;
+  if (!sanitizedDirectory) throw 'Unable to find fannypack-core';
 
-  if (fs.existsSync(localUserDirecory)) {
-    exampleDirecory = localUserDirecory;
-    return exampleDirecory;
-  } else if (
-    fs.existsSync(`/usr/local/lib/node/fannypack-core/examples/${type}`)
-  ) {
-    exampleDirecory = `/usr/local/lib/node/fannypack-core/examples/${type}`;
-    return exampleDirecory;
-  } else if (
-    fs.existsSync(`/usr/local/lib/node_modules/fannypack-core/examples/${type}`)
-  ) {
-    exampleDirecory = `/usr/local/lib/node_modules/fannypack-core/examples/${type}`;
-    return exampleDirecory;
-  } else {
-    throw 'Unable to find fannypack-core';
-  }
+  const fannypackDirecory: string = `${sanitizedDirectory}/fannypack-core/examples/${type}`;
+
+  return fannypackDirecory;
 }
 
 export default class FannyPack {
