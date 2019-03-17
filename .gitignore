@@ -1,6 +1,7 @@
 node_modules
 dist
 compiled
+examples/*/node_modules
 
 *.log
 .DS_Store
