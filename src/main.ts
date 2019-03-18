@@ -1,39 +1,51 @@
 #!/usr/bin/env node
 
-import program from 'commander';
-import FannyPack from './lib/main';
+import * as inquirer from 'inquirer';
+import * as fs from 'fs';
+import * as path from 'path';
+
+import { spawn, execSync } from 'child_process';
+import { ncp } from 'ncp';
+
+import { options } from './options.js';
 
 class Main {
-  private appname!: string;
-  private apptype!: string;
+  private name!: string;
+  private project!: string;
+  private language!: string;
+  private services!: Array<Services>;
 
   constructor() {
-    this.init();
+    this.setup();
   }
 
-  private init(): void {
-    program
-      .version('0.0.1')
-      .option('--basic-node', 'Basic Node.js project')
-      .option('--custom-node', 'Custom Node.js project')
-      .parse(process.argv);
+  private async setup(): Promise<void> {
+    const operationResponse: Prompt = await inquirer.prompt(options);
 
-    this.appname = program.args[0] || 'fannypack-app';
+    this.name = operationResponse.name;
+    this.project = operationResponse.project;
+    this.language = operationResponse.language;
+    this.services = operationResponse.services;
 
-    this.setup(program);
-  }
+    const sourcedir: string = path.resolve(
+      `examples/${this.language}/${this.project}`,
+    );
 
-  private setup(program: any): void {
-    this.setProjectType(program);
+    const outputdir: string = path.resolve(this.name);
 
-    const project: FannyPack = new FannyPack(this.appname, this.apptype);
-  }
+    fs.mkdirSync(outputdir);
 
-  private setProjectType(program: any): void {
-    if (program.basicNode) this.apptype = 'basic-node';
-    if (program.customNode) this.apptype = 'custom-node';
+    ncp(sourcedir, outputdir, err => {
+      if (err) throw err;
 
-    this.apptype == '' && program.help();
+      process.chdir(`${this.name}`);
+
+      const child = spawn('yarn');
+
+      child.stdout.on('data', data => console.log(`${data}`));
+      child.stderr.on('data', data => console.error(`${data}`));
+      child.on('exit', (code, signal) => console.log(`Happy Hacking! 🚀`));
+    });
   }
 }
 

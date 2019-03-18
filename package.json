@@ -15,18 +15,20 @@
   "scripts": {
     "build": "npx tsc",
     "start": "yarn build && cd ./dist && node main.js",
-    "dev": "npx tsc -w"
+    "dev": "npx tsc -w",
+    "test": "node dist/main.js"
   },
   "bin": {
     "fannypack": "./dist/main.js"
   },
   "dependencies": {
     "commander": "^2.19.0",
+    "inquirer": "^6.2.2",
     "ncp": "^2.0.0",
     "tslint-config-airbnb": "^5.11.1"
   },
   "devDependencies": {
-    "@types/inquirer": "^0.0.43",
+    "@types/inquirer": "^0.0.44",
     "@types/ncp": "^2.0.1",
     "tslint": "^5.12.0",
     "typescript": "^3.2.2"
