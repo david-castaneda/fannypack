@@ -1,7 +1,7 @@
 {
   "name": "fannypack-core",
   "description": "Build configurations for node without the hassle 🚀",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "./dist/main.js",
   "types": "./dist/main.d.ts",
   "license": "MIT",
