@@ -2,20 +2,20 @@
 # yarn lockfile v1
 
 
-"@fimbul/bifrost@^0.15.0":
-  version "0.15.0"
-  resolved "https://registry.yarnpkg.com/@fimbul/bifrost/-/bifrost-0.15.0.tgz#f3a48dee3046681e926c1f970f0b1a67e29e088e"
-  integrity sha512-sHTwnwA9YhxcVEJkBlfKH1KLmGQGnNYPxk+09w5NnkXelYiiP8a5f351weYfxG0CUPLt1Fgkha20Y/9+jhjn/Q==
+"@fimbul/bifrost@^0.17.0":
+  version "0.17.0"
+  resolved "https://registry.yarnpkg.com/@fimbul/bifrost/-/bifrost-0.17.0.tgz#f0383ba7e40992e3193dc87e2ddfde2ad62a9cf4"
+  integrity sha512-gVTkJAOef5HtN6LPmrtt5fAUmBywwlgmObsU3FBhPoNeXPLaIl2zywXkJEtvvVLQnaFmtff3x+wIj5lHRCDE3Q==
   dependencies:
-    "@fimbul/ymir" "^0.15.0"
+    "@fimbul/ymir" "^0.17.0"
     get-caller-file "^2.0.0"
     tslib "^1.8.1"
-    tsutils "^3.1.0"
+    tsutils "^3.5.0"
 
-"@fimbul/ymir@^0.15.0":
-  version "0.15.0"
-  resolved "https://registry.yarnpkg.com/@fimbul/ymir/-/ymir-0.15.0.tgz#944c881b14fadf7b43d1ae00b445e42261bb407f"
-  integrity sha512-Ow0TfxxQ65vIktHcZyXHeDsGKuzJ9Vt6y77R/aOrXQXLMdYHG+XdbiUWzQbtaGOmNzYVkQfINiFnIdvn5Bn24g==
+"@fimbul/ymir@^0.17.0":
+  version "0.17.0"
+  resolved "https://registry.yarnpkg.com/@fimbul/ymir/-/ymir-0.17.0.tgz#4f28389b9f804d1cd202e11983af1743488b7815"
+  integrity sha512-xMXM9KTXRLHLVS6dnX1JhHNEkmWHcAVCQ/4+DA1KKwC/AFnGHzu/7QfQttEPgw3xplT+ILf9e3i64jrFwB3JtA==
   dependencies:
     inversify "^5.0.0"
     reflect-metadata "^0.1.12"
@@ -273,7 +273,7 @@ color-name@1.1.3:
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.3.tgz#a7d0558bd89c42f795dd42328f740831ca53bc25"
   integrity sha1-p9BVi9icQveV3UIyj3QIMcpTvCU=
 
-commander@^2.12.1, commander@^2.19.0:
+commander@^2.12.1:
   version "2.19.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.19.0.tgz#f6198aa84e5b83c46054b94ddedbfed5ee9ff12a"
   integrity sha512-6tvAOO+D6OENvRAh524Dh9jcfKTYDQAqvqezbCW82xj5X0pSrcpxtvRKHLG0yBY6SD7PSDrJaj+0AiOcKVd1Xg==
@@ -338,9 +338,9 @@ fs.realpath@^1.0.0:
   integrity sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
 
 get-caller-file@^2.0.0:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-2.0.1.tgz#25835260d3a2b9665fcdbb08cb039a7bbf7011c0"
-  integrity sha512-SpOZHfz845AH0wJYVuZk2jWDqFmu7Xubsx+ldIpwzy5pDUpu7OJHK7QYNSA2NPlDSKQwM1GFaAkciOWjjW92Sg==
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-2.0.5.tgz#4f94412a82db32f36e3b0b9741f8a97feb031f7e"
+  integrity sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg==
 
 glob@^7.1.1:
   version "7.1.3"
@@ -495,9 +495,9 @@ path-parse@^1.0.6:
   integrity sha512-GSmOT2EbHrINBf9SR7CDELwlJ8AENk3Qn7OikK4nFYAu3Ote2+JYNVvkpAEQm3/TLNEJFD/xZJjzyxg3KBWOzw==
 
 reflect-metadata@^0.1.12:
-  version "0.1.12"
-  resolved "https://registry.yarnpkg.com/reflect-metadata/-/reflect-metadata-0.1.12.tgz#311bf0c6b63cd782f228a81abe146a2bfa9c56f2"
-  integrity sha512-n+IyV+nGz3+0q3/Yf1ra12KpCyi001bi4XFxSjbiWWjfqb52iTTtpGXmCCAOWWIAn9KEuFZKGqBERHmrtScZ3A==
+  version "0.1.13"
+  resolved "https://registry.yarnpkg.com/reflect-metadata/-/reflect-metadata-0.1.13.tgz#67ae3ca57c972a2aa1642b10fe363fe32d49dc08"
+  integrity sha512-Ts1Y/anZELhSsjMcU605fU9RE4Oi3p5ORujwbIKXfWa+0Zxs510Qrmrce5/Jowq3cHSZSJqBjypxmHarc+vEWg==
 
 resolve@^1.3.2:
   version "1.9.0"
@@ -621,11 +621,11 @@ tslint-config-airbnb@^5.11.1:
     tslint-microsoft-contrib "~5.2.1"
 
 tslint-consistent-codestyle@^1.14.1:
-  version "1.14.1"
-  resolved "https://registry.yarnpkg.com/tslint-consistent-codestyle/-/tslint-consistent-codestyle-1.14.1.tgz#8555f1b05ccbf093166a73347f41eb101731a522"
-  integrity sha512-UxGRX2fF5LpZtqYpuPFaIva+2D7ASX3pTVw41yis6Hmw7PPA3cBnFEX1jqRsnyxGrca6mHxz7xDnwCHtOjWJMQ==
+  version "1.15.1"
+  resolved "https://registry.yarnpkg.com/tslint-consistent-codestyle/-/tslint-consistent-codestyle-1.15.1.tgz#a0c5cd5a5860d40b659c490d8013c5732e02af8c"
+  integrity sha512-38Y3Dz4zcABe/PlPAQSGNEWPGVq0OzcIQR7SEU6dNujp/SgvhxhJOhIhI9gY4r0I3/TNtvVQwARWor9O9LPZWg==
   dependencies:
-    "@fimbul/bifrost" "^0.15.0"
+    "@fimbul/bifrost" "^0.17.0"
     tslib "^1.7.1"
     tsutils "^2.29.0"
 
@@ -677,10 +677,10 @@ tsutils@^2.27.2, tsutils@^2.29.0:
   dependencies:
     tslib "^1.8.1"
 
-tsutils@^3.0.0, tsutils@^3.1.0:
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/tsutils/-/tsutils-3.6.0.tgz#33fc3ddb74abf5bba10789acd03eee6ea96c839c"
-  integrity sha512-hCG3lZz+uRmmiC4brr/kY6Yuypnl20PNe8t49DO4OUGlbxWkxYHF63EeG2XPSd0JcKiWmp9p55yQyrkxqSS5Dg==
+tsutils@^3.0.0, tsutils@^3.5.0:
+  version "3.9.1"
+  resolved "https://registry.yarnpkg.com/tsutils/-/tsutils-3.9.1.tgz#2a40dc742943c71eca6d5c1994fcf999956be387"
+  integrity sha512-hrxVtLtPqQr//p8/msPT1X1UYXUjizqSit5d9AQ5k38TcV38NyecL5xODNxa73cLe/5sdiJ+w1FqzDhRBA/anA==
   dependencies:
     tslib "^1.8.1"
 

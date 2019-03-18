@@ -1,7 +1,7 @@
 {
   "name": "fannypack-core",
   "description": "Build configurations for node without the hassle 🚀",
-  "version": "0.0.6",
+  "version": "0.1.1",
   "main": "./dist/main.js",
   "types": "./dist/main.d.ts",
   "license": "MIT",
@@ -22,15 +22,14 @@
     "fannypack": "./dist/main.js"
   },
   "dependencies": {
-    "commander": "^2.19.0",
     "inquirer": "^6.2.2",
-    "ncp": "^2.0.0",
-    "tslint-config-airbnb": "^5.11.1"
+    "ncp": "^2.0.0"
   },
   "devDependencies": {
     "@types/inquirer": "^0.0.44",
     "@types/ncp": "^2.0.1",
     "tslint": "^5.12.0",
+    "tslint-config-airbnb": "^5.11.1",
     "typescript": "^3.2.2"
   },
   "keywords": [
