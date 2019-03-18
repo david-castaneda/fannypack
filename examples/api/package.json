@@ -8,6 +8,7 @@
     "start": "node build/main.js",
     "build": "backpack build",
     "dev": "backpack dev",
+    "test": "jest --passWithNoTests",
     "lint": "eslint src --color",
     "p": "prettier --write 'src/**/*.js'",
     "p:w": "onchange 'src/**/*.js' -- prettier --write {{changed}}"

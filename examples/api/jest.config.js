@@ -4,5 +4,8 @@ module.exports = {
     "src/**/*.js",
     "!**/node_modules/**"
   ],
-  coverageDirectory: "coverage"
+  coverageDirectory: "coverage",
+  transform: {
+    "^.+\\.js$": "babel-jest",
+  },
 }
